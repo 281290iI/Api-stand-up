@@ -1,0 +1,102 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Onest, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #1a1a1a;
+  background-color: #fff;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p figure {
+  margin: 0;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.ts-dropdown,
+.ts-control,
+.ts-control input {
+  font-size: 18px;
+  line-height: 1.4;
+  border-radius: 8px;
+  color: #1a1a1a;
+  border: none;
+  padding: 10px 16px 8px;
+}
+
+.dropdown-active .ts-control {
+  border-radius: 8px;
+}
+
+.ts-dropdown .active {
+  background-color: transparent;
+}
+
+.ts-wrapper.single .ts-control {
+  background: #fff;
+}
+
+.ts-wrapper.single .ts-control::after {
+  border-color: #1a1a1a transparent transparent transparent;
+}
+
+.ts-wrapper.single.dropdown-active .ts-control::after {
+  border-color: transparent transparent #1a1a1a transparent;
+}
+
+.just-validate-error-label {
+  display: none;
+}
